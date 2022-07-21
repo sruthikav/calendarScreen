@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		897636722888FDA500412168 /* WorkoutDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897636712888FDA500412168 /* WorkoutDate.swift */; };
 		89A08B4B288760C10065A088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A08B4A288760C10065A088 /* AppDelegate.swift */; };
 		89A08B4D288760C10065A088 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A08B4C288760C10065A088 /* SceneDelegate.swift */; };
 		89A08B4F288760C10065A088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A08B4E288760C10065A088 /* ViewController.swift */; };
@@ -14,9 +15,11 @@
 		89A08B55288760C10065A088 /* calendarScreen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89A08B53288760C10065A088 /* calendarScreen.xcdatamodeld */; };
 		89A08B57288760C70065A088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A08B56288760C70065A088 /* Assets.xcassets */; };
 		89A08B5A288760C70065A088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89A08B58288760C70065A088 /* LaunchScreen.storyboard */; };
+		89D962A02888B07800AAA10E /* TrackerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9629F2888B07800AAA10E /* TrackerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		897636712888FDA500412168 /* WorkoutDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDate.swift; sourceTree = "<group>"; };
 		89A08B47288760C10065A088 /* calendarScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calendarScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A08B4A288760C10065A088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89A08B4C288760C10065A088 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		89A08B56288760C70065A088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89A08B59288760C70065A088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89A08B5B288760C70065A088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89D9629F2888B07800AAA10E /* TrackerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,10 @@
 				89A08B4A288760C10065A088 /* AppDelegate.swift */,
 				89A08B4C288760C10065A088 /* SceneDelegate.swift */,
 				89A08B4E288760C10065A088 /* ViewController.swift */,
+				89D9629F2888B07800AAA10E /* TrackerTableViewController.swift */,
 				89A08B50288760C10065A088 /* Main.storyboard */,
 				89A08B56288760C70065A088 /* Assets.xcassets */,
+				897636712888FDA500412168 /* WorkoutDate.swift */,
 				89A08B58288760C70065A088 /* LaunchScreen.storyboard */,
 				89A08B5B288760C70065A088 /* Info.plist */,
 				89A08B53288760C10065A088 /* calendarScreen.xcdatamodeld */,
@@ -141,10 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D962A02888B07800AAA10E /* TrackerTableViewController.swift in Sources */,
 				89A08B4F288760C10065A088 /* ViewController.swift in Sources */,
 				89A08B55288760C10065A088 /* calendarScreen.xcdatamodeld in Sources */,
 				89A08B4B288760C10065A088 /* AppDelegate.swift in Sources */,
 				89A08B4D288760C10065A088 /* SceneDelegate.swift in Sources */,
+				897636722888FDA500412168 /* WorkoutDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
