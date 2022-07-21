@@ -34,7 +34,7 @@
                     <navigationItem key="navigationItem" title="workout tracker!" id="c7J-QX-c2I">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="qo8-uN-Y84">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="gcn-a6-g9x"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="Zg9-0p-xLn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -81,15 +81,11 @@
                                 <buttonConfiguration key="configuration" style="filled" title="record your workout!"/>
                                 <connections>
                                     <action selector="recordWorkoutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iiI-eu-kdx"/>
-                                    <segue destination="V4C-Gh-rKn" kind="presentation" modalPresentationStyle="fullScreen" id="G80-ZR-o3e"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="R74-yt-YG5">
                                 <rect key="frame" x="47" y="217" width="320" height="310"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="minimumDate" timeIntervalSinceReferenceDate="680004000">
-                                    <!--2022-07-20 10:00:00 +0000-->
-                                </date>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UO-RI-Ou9">
                                 <rect key="frame" x="47" y="593" width="320" height="128"/>
@@ -102,6 +98,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IzI-IE-jS2"/>
                     <connections>
                         <outlet property="datePicker" destination="R74-yt-YG5" id="XbQ-xF-iun"/>
                         <outlet property="motivationLabel" destination="0UO-RI-Ou9" id="3SD-Zg-3Tj"/>
@@ -110,12 +107,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1542.0289855072465" y="48.883928571428569"/>
+            <point key="canvasLocation" x="1528" y="49"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="G80-ZR-o3e"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">

@@ -9,12 +9,12 @@ import UIKit
 
 class TrackerTableViewController: UITableViewController {
 
-    var workoutDates : [WorkoutDate] = []
+    var workoutDates : [String] = []
+    var date = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        workoutDates = createWorkoutDates()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -22,16 +22,16 @@ class TrackerTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     } //END of viewDidLoad
-    
-    func createWorkoutDates() -> [WorkoutDate] {
-        let workout = WorkoutDate()
-        workout.date = "7/21/22"
-        
-        let workout2 = WorkoutDate()
-        workout2.date = "7/22/22"
-        
-        return [workout, workout2]
-    }
+//    
+//    func createWorkoutDates() -> [WorkoutDate] {
+//        let workout = WorkoutDate()
+//        workout.date = "7/21/22"
+//        
+//        let workout2 = WorkoutDate()
+//        workout2.date = "7/22/22"
+//        
+//        return [workout, workout2]
+//    }
 
     // MARK: - Table view data source
 
@@ -50,7 +50,7 @@ class TrackerTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         let workoutDate = workoutDates[indexPath.row]
         // Configure the cell...
-        cell.textLabel?.text = workoutDate.date
+        cell.textLabel?.text = workoutDate
         return cell
     }
 
